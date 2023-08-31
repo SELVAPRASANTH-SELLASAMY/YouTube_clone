@@ -12,6 +12,7 @@ import ProMenu from './ProfileMenu';
 import Notify from './Notification';
 import Crt from './Create';
 import Suggesstions from './Suggesstions';
+import Body from './playerbody';
 function Menu()
 {
     const [show,setShow]=useState(false);
@@ -25,11 +26,13 @@ function Menu()
         animationIterationCount:'5',
         animationTimingFunction: 'linear'
     };
+    const [sgstbar,setMove]=useState(false);
+    const [videoplayer,setmovement]=useState(false);
     return(
         <>
         <div className="top-menu">
             <div className="menu">
-                <div onClick={()=>setShow(!show)} className="hamburger-menu">
+                <div onClick={()=>{setShow(!show); setMove(!sgstbar);setmovement(!videoplayer)}} className="hamburger-menu">
                     <img src={hamburger} alt="hamburger-icon" />
                 </div>
                 <div className="youtube-logo">
@@ -69,8 +72,11 @@ function Menu()
             </div>
         </div>
         <div className="leftSidemenu">
-            {show?<Left className="Left-element"/>:null}
-            <Suggesstions className="Suggestions-element"/>
+            {show?<Left/>:null}
+            <div className={`${sgstbar ? "sgst" : ''}`}>
+                <Suggesstions/>
+                <Body/>
+            </div>
         </div>
         <div className="profileMenu">
            {disp?<ProMenu/>:null}

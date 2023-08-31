@@ -25,8 +25,13 @@ function Suggesstions(){
         <div className="suggesstion-container">
             {
                 suggest.map((content)=>(
-                    <div className="contents">
-                        <p>{content}</p>
+                    <div className="cont">
+                        <div className="contents">
+                            <p>{content}</p>
+                        </div>
+                        <div className="contents-1">
+                            <p>{content}</p>
+                        </div>
                     </div>
                 ))
             }

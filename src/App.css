@@ -149,7 +149,7 @@ body{
     position: absolute;
     top: 5.5vmin;
     visibility: hidden;
-    z-index: 0;
+    z-index: 2;
 }
 .search-icon .what-is-it{
     width: 6.5vmin;
@@ -336,10 +336,8 @@ body{
     font-size: 1.6vmin;
     margin-top: 1.5vmin;
 }
-.leftSidemenu{
+.sgst{
+    width: 87.5%;
     position: relative;
-}
-.Suggestions-element{
-    position: absolute;
-    left: 0;
+    left: 25vmin;
 }

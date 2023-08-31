@@ -8,6 +8,7 @@
     height: fit-content;
     position: absolute;
     right: 1vmin;
+    top: 5.5vmin;
     display: flex;
     flex-direction: column;
     align-items: center;
