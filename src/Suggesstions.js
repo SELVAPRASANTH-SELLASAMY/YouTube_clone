@@ -24,13 +24,11 @@ function Suggesstions(){
     return(
         <div className="suggesstion-container">
             {
-                suggest.map((content)=>(
-                    <div className="cont">
-                        <div className="contents">
-                            <p>{content}</p>
-                        </div>
-                        <div className="contents-1">
-                            <p>{content}</p>
+                suggest.map((text)=>(
+                    <div className="content">
+                        <p>{text}</p>
+                        <div className="contentonhover">
+                            <p>{text}</p>
                         </div>
                     </div>
                 ))

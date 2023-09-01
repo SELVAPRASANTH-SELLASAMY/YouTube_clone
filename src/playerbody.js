@@ -1,9 +1,39 @@
 import './playerbody.css';
 import Video from './video';
 function Playerbody(){
+    const playLists=[
+        'Learning',
+        'Hollywood songs',
+        'Bootstrap tutorial',
+        'Movie',
+        'Love songs',
+        'Datastructures',
+        'Learning',
+        'Hollywood songs',
+        'Bootstrap tutorial',
+        'Movie',
+        'Love songs',
+        'Datastructures',
+        'Learning',
+        'Hollywood songs',
+        'Bootstrap tutorial',
+        'Movie',
+        'Love songs',
+        'Datastructures',
+        'Learning',
+        'Hollywood songs',
+        'Bootstrap tutorial',
+        'Movie',
+        'Love songs',
+        'Datastructures'
+    ];
     return (
         <div className="body-container">
-            <Video/>
+            {
+                playLists.map((pl)=>(
+                    <Video/>
+                ))
+            }
         </div>
     );
 }

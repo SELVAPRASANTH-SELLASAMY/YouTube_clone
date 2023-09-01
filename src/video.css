@@ -1,6 +1,6 @@
 .thumbnail{
-    height: 20vmin;
-    width: 40vmin;
+    height: 18vmin;
+    width: 35vmin;
     background-color: rgb(237,237,237);
     border-radius: 1.5vmin;
     animation-name: load;
@@ -9,12 +9,12 @@
     animation-timing-function:linear;
 }
 .video-container{
-    height: 36.65vmin;
-    width: 40vmin;
+    height: 30vmin;
+    width: 35vmin;
 }
 .video-details{
     height: fit-content;
-    width: 34vmin;
+    width: 30vmin;
     display: flex;
     align-items: center;
     margin-top: 1.5vmin;
