@@ -1,9 +1,8 @@
-import Menu from './menu';
 function App()
 {
   return(
-    <div>
-      <Menu/>
+    <div className="config">
+      <h1>App under developement</h1>
     </div>
   );
 }
