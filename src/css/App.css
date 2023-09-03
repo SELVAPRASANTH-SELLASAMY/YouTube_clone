@@ -200,7 +200,10 @@ body{
     cursor: pointer;
 }
 .top-menu{
-    position: relative;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 10;
 }
 .container{
     height: 100vh;
@@ -213,6 +216,7 @@ body{
     overflow-y: overlay;
     overflow-x: hidden;
     background-color: white;
+    z-index: 2;
 }
 .home img,.shorts img,.subscription img,.library img,.history img,
 .your-videos img,.watch-later img,.liked-videos img,
@@ -348,4 +352,22 @@ body{
     left: 0;
     top: 5.5vmin;
     z-index: 7;
+}
+.menu-in-left-with-video{
+    height: fit-content;
+    width: fit-content;
+    background-color: green;
+    position: relative;
+}
+.video-display-area{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    top: 3.5vmin;
+    z-index: -2;
+}
+.suggesstion-area{
+    position: fixed;
+    background-color: white;
 }
