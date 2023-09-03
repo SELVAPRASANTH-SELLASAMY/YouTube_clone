@@ -123,6 +123,9 @@ body{
     cursor: pointer;
     margin-left: 1.5vmin;
 }
+.create,.notify,.profile{
+    margin-left: 0;
+}
 @keyframes alexa {
     0%{background-color: rgba(0, 0, 255, 0.49);}
     25%{background-color: rgba(255, 0, 0, 0.497);}
@@ -160,18 +163,6 @@ body{
 .search-icon:hover .what-is-it,.microphone:hover .what-is-it,
 .create:hover .what-is-it,.notify:hover .what-is-it{
     visibility: visible;
-}
-.create{
-    cursor: default;
-}
-.create img{
-    cursor: pointer;
-}
-.notify{
-    cursor: default;
-}
-.notify img{
-    cursor: pointer;
 }
 .microphone img,.create img,.notify img,.profile img{
     height: 2.25vmin;
@@ -337,4 +328,24 @@ body{
     width: 87.5%;
     position: relative;
     left: 25vmin;
+}
+.controlNotification,.control-create{
+    height: fit-content;
+    position: relative;
+}
+.notification-bar{
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    right: 0;
+    top: 5.5vmin;
+    z-index: 7;
+}
+.create-bar{
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    left: 0;
+    top: 5.5vmin;
+    z-index: 7;
 }
